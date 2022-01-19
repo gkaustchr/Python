@@ -8,7 +8,7 @@ series = pd.Series(np.random.random(5), name="Coluna 01")
 #DataFrame
 from pandas_datareader import data as wb
 
-acaoApple = wb.DataReader("AAPL", data_source="yahoo", start="2010-1-1") #AAPL é o ticket da ação desejada
+acaoApple = wb.DataReader("OIBR4.SA", data_source="yahoo", start="2010-1-1") #AAPL é o ticket da ação desejada
 print(acaoApple)
 print(acaoApple.info()) #Informações do DataFrame
 print(acaoApple.head()) #Informações das 5 primeiras linhas
